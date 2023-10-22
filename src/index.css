@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ACTIVE LINKS STYLING */
+.active {
+  @apply text-accent;
+}
+/* SCROLLBAR Customization */
+main::-webkit-scrollbar {
+  @apply w-2.5 bg-primaryBg;
+}
+
+main::-webkit-scrollbar-track {
+  @apply bg-primaryBg;
+}
+
+main::-webkit-scrollbar-thumb {
+  @apply bg-secondaryBg;
+}
+main::-webkit-scrollbar-button {
+  @apply bg-secondaryBg;
+}
