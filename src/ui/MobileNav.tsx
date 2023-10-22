@@ -30,7 +30,7 @@ function MobileNav({ menuOpen, handleMenu }: PropsType) {
           <MenuBtn name="close" onClick={handleMenu}>
             <HiOutlineXMark />
           </MenuBtn>
-          <div className="mt-6">
+          <div className="mt-6" onClick={handleMenu}>
             <Profile name="Bon Tertius" />
           </div>
           <div className="flex h-full flex-col justify-center gap-2">
