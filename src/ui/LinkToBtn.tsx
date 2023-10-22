@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
-import { twJoin, twMerge } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 
 type PropsType = {
   type: string;
