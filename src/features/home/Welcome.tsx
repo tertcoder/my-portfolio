@@ -2,11 +2,11 @@ import LinkToBtn from "../../ui/LinkToBtn";
 import { HiArrowSmallRight } from "react-icons/hi2";
 function Welcome() {
   return (
-    <div className="flex flex-col items-center gap-8 pt-24">
+    <div className="flex flex-col items-center gap-8  pt-10 md:pt-24">
       <div className="grid w-full place-content-center gap-4 text-center md:grid-cols-2 md:text-start">
         <div className="w-full">
           <p className="text-sm font-medium text-secondary">Hello, I do</p>
-          <h1 className="max-w-lg  text-4xl font-bold text-primary ">
+          <h1 className="max-w-lg  text-4xl font-bold uppercase text-primary ">
             FRONTEND DEVELOPMENT AND UI DESIGNING
           </h1>
         </div>

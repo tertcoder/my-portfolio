@@ -9,7 +9,7 @@ type PropsType = {
 };
 function MenuBtn({ children, name, onClick }: PropsType) {
   const className =
-    "flex h-14 w-14 items-center justify-center rounded-full bg-secondaryBg text-3xl font-bold text-primary duration-300 hover:text-highlight ";
+    "flex h-14 w-14 items-center justify-center rounded-full bg-secondaryBg text-3xl font-bold   text-highlight ";
   const content =
     name === "open" ? (
       <button className={className} onClick={onClick}>
