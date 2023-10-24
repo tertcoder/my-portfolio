@@ -17,7 +17,7 @@ function LinkToBtn({
   children,
 }: PropsType): ReactElement {
   const primary =
-    "rounded-full bg-highlight/80 px-4 text-lg font-bold text-primary duration-300 hover:bg-highlight flex items-center justify-center py-4";
+    "rounded-full bg-highlight/80 px-4 text-lg font-bold text-primary duration-300 hover:bg-highlight flex items-center justify-center py-3.5";
   const secondary =
     "rounded-full bg-secondaryBg px-4 py-2 text-sm font-semibold text-primary  flex items-center justify-center space-x-1.5";
   return (
