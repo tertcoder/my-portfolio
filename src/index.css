@@ -4,7 +4,7 @@
 
 /* ACTIVE LINKS STYLING */
 .active {
-  @apply text-accent;
+  @apply text-highlight;
 }
 /* SCROLLBAR Customization */
 main::-webkit-scrollbar {

@@ -42,21 +42,21 @@ function MobileNav({ menuOpen, handleMenu }: PropsType) {
           <div className="flex h-full flex-col justify-center gap-2">
             <NavLink
               onClick={handleMenu}
-              className="flex items-center justify-center rounded-full bg-secondaryBg px-4 py-3.5 text-lg font-bold text-primary duration-300 hover:text-accent"
+              className="flex items-center justify-center rounded-full bg-secondaryBg px-4 py-3.5 text-lg font-bold text-primary duration-300 hover:text-highlight"
               to="home"
             >
               Home
             </NavLink>
             <NavLink
               onClick={handleMenu}
-              className="flex items-center justify-center rounded-full bg-secondaryBg px-4 py-3.5 text-lg font-bold text-primary duration-300 hover:text-accent"
+              className="flex items-center justify-center rounded-full bg-secondaryBg px-4 py-3.5 text-lg font-bold text-primary duration-300 hover:text-highlight"
               to="works"
             >
               Works
             </NavLink>
             <NavLink
               onClick={handleMenu}
-              className="flex items-center justify-center rounded-full bg-secondaryBg px-4 py-3.5 text-lg font-bold text-primary duration-300 hover:text-accent"
+              className="flex items-center justify-center rounded-full bg-secondaryBg px-4 py-3.5 text-lg font-bold text-primary duration-300 hover:text-highlight"
               to="about"
             >
               About

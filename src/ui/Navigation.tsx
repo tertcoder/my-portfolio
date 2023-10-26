@@ -9,28 +9,28 @@ function Navigation() {
     setMenuOpen((o) => !o);
   }
   return (
-    <header className="border-secondaryBg flex items-center border-b">
+    <header className="flex items-center border-b border-secondaryBg">
       <nav className="mx-6 flex w-full items-stretch justify-between sm:mx-12 md:mx-24 ">
         <Profile name="Bon" />
-        <div className=" divide-primaryBg hidden divide-x  rounded-full bg-secondaryBg md:flex">
+        <div className=" hidden divide-x divide-primaryBg  rounded-full bg-secondaryBg md:flex">
           <NavLink
             onClick={handleMenu}
             to="home"
-            className="flex items-center justify-center px-4 text-lg font-bold text-primary duration-300 hover:text-accent"
+            className="flex items-center justify-center rounded-l-full px-4 text-lg font-bold text-primary duration-300 hover:text-highlight  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2  focus:ring-offset-primaryBg "
           >
             <span> Home</span>
           </NavLink>
           <NavLink
             onClick={handleMenu}
             to="works"
-            className="flex items-center justify-center px-4 text-lg font-bold text-primary duration-300 hover:text-accent"
+            className="flex items-center justify-center px-4 text-lg font-bold text-primary duration-300 hover:text-highlight focus:outline-none  focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg "
           >
             <span>Works</span>
           </NavLink>
           <NavLink
             onClick={handleMenu}
             to="about"
-            className="flex items-center justify-center px-4 text-lg font-bold text-primary duration-300 hover:text-accent"
+            className="flex  items-center  justify-center rounded-r-full px-4 text-lg font-bold text-primary duration-300 hover:text-highlight focus:outline-none  focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg "
           >
             <span> About</span>
           </NavLink>

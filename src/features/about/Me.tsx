@@ -37,7 +37,10 @@ function Me() {
           <h3 className="text-primary">Techs and Tools I use:</h3>
           <div className="flex flex-wrap justify-center gap-3 p-3">
             {techs.map((tech) => (
-              <span className="rounded-full bg-secondaryBg p-2 text-primary">
+              <span
+                key={tech}
+                className="cursor-pointer rounded-full bg-secondaryBg p-2 text-primary"
+              >
                 #{tech}
               </span>
             ))}

@@ -34,6 +34,7 @@ function Experiences() {
       <div className="flex w-full flex-1 flex-col gap-5 pb-8">
         {experiences.map((experience) => (
           <Experience
+            key={experience.title}
             title={experience.title}
             description={experience.description}
           />
@@ -44,7 +45,7 @@ function Experiences() {
           <span className="text-highlight">
             <HiArrowSmallLeft />
           </span>{" "}
-          See my
+          Back to
         </span>
         <span className="text-highlight">Projects</span>
       </LinkToBtn>

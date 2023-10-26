@@ -20,13 +20,13 @@ function IndicationNav() {
           <>
             <NavLink
               to="/works/projects"
-              className="px-2 py-1 text-sm font-semibold text-secondary"
+              className="rounded-l-full px-2 py-1 text-sm font-semibold text-secondary duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
             >
               Projects
             </NavLink>
             <NavLink
               to="/works/experiences"
-              className="px-2 py-1 text-sm font-semibold text-secondary"
+              className="rounded-r-full px-2 py-1 text-sm font-semibold text-secondary duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
             >
               Experiences
             </NavLink>
@@ -36,13 +36,13 @@ function IndicationNav() {
           <>
             <NavLink
               to="/about/me"
-              className="px-2 py-1 text-sm font-semibold text-secondary"
+              className="rounded-l-full px-2 py-1 text-sm font-semibold text-secondary  duration-300 focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
             >
               Me
             </NavLink>
             <NavLink
               to="/about/contact"
-              className="px-2 py-1 text-sm font-semibold text-secondary"
+              className="rounded-r-full px-2 py-1 text-sm font-semibold text-secondary duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
             >
               Contact
             </NavLink>

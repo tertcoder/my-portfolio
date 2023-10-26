@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 function About() {
   return (
-    <div>
+    <div className="h-full">
       <Outlet />
     </div>
   );

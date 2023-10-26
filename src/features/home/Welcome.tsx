@@ -21,7 +21,7 @@ const techs: string[][] = [
 
 function Welcome() {
   return (
-    <div className="flex flex-col items-center gap-8  pt-10 md:pt-24">
+    <div className="flex flex-col items-center gap-14  pt-10 md:pt-24">
       <div className="grid w-full place-content-center gap-4 text-center md:grid-cols-2 md:text-start">
         <div className="w-full">
           <p className="text-sm font-medium text-secondary">Hello, I do</p>
@@ -43,7 +43,7 @@ function Welcome() {
       </LinkToBtn>
       <div className="flex max-w-2xl flex-wrap justify-center gap-4 px-1 py-4">
         {techs.map((tech) => (
-          <img src={tech[1]} alt={tech[0]} />
+          <img key={tech[0]} src={tech[1]} alt={tech[0]} />
         ))}
       </div>
     </div>

@@ -17,13 +17,15 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
         {design && (
           <motion.a
             href={design}
+            target="_blank"
             onMouseEnter={() => setIsVisible(true)}
             onMouseLeave={() => setIsVisible(false)}
-            className="absolute right-1 top-3 flex items-center gap-2 overflow-hidden rounded-full bg-primaryBg p-1.5 text-primary duration-300 hover:text-highlight"
-            layout
+            className="absolute right-1 top-3 flex items-center gap-2 overflow-hidden rounded-full bg-primaryBg p-1.5 text-primary duration-300 hover:text-highlight   focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <HiMiniPencil />
+            <motion.span layout className="h-4 w-4">
+              <HiMiniPencil />
+            </motion.span>
             <AnimatePresence mode="popLayout">
               {isVisible && (
                 <motion.span
@@ -31,7 +33,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15, ease: "backInOut" }}
-                  className="text-sm font-semibold text-highlight"
+                  className="text-sm font-semibold  text-highlight"
                 >
                   design
                 </motion.span>
@@ -53,7 +55,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
               <a
                 href={code}
                 target="_blank"
-                className="flex items-center gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary"
+                className="flex items-center gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
               >
                 <Github />
                 <span> GitHub</span>
@@ -61,7 +63,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
               <a
                 href={live}
                 target="_blank"
-                className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary"
+                className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary  duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
               >
                 <GoLive />
                 <span> Live</span>
