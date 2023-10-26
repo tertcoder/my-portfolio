@@ -10,13 +10,12 @@ function IndicationNav() {
     const activeLink: string = paths.filter((path) => path === location)[0];
     setCurrentPage(activeLink);
   }, [location]);
-  console.log(currentPage);
   return (
     <div className="my-4 flex h-8 w-full items-center justify-between px-6  sm:px-12 md:px-24">
       <span className="text-xs font-semibold text-secondary">
         ~{currentPage}
       </span>
-      <div className="divide-primaryBg flex space-x-1 divide-x  rounded-full bg-secondaryBg">
+      <div className="flex space-x-1 divide-x divide-primaryBg  rounded-full bg-secondaryBg">
         {location.startsWith("/works/") && (
           <>
             <NavLink

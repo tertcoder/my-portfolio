@@ -43,7 +43,7 @@ const works: WorkType[] = [
 function Projects() {
   return (
     <div className="flex flex-col items-center justify-between py-10">
-      <div className="gap flex w-full flex-1 flex-wrap justify-center gap-7 pb-8">
+      <div className="flex w-full flex-1 flex-wrap justify-center gap-7 pb-8">
         {works.map((work) => (
           <Work
             key={work.title}
@@ -56,10 +56,10 @@ function Projects() {
           />
         ))}
       </div>
-      <LinkToBtn to="/experiences" type="secondary">
+      <LinkToBtn to="/works/experiences" type="secondary">
         <span>See my </span>
-        <span className="flex items-center text-highlight">
-          Experince <HiArrowSmallRight />
+        <span className="flex items-center gap-0.5 text-highlight">
+          Experience <HiArrowSmallRight />
         </span>
       </LinkToBtn>
     </div>
