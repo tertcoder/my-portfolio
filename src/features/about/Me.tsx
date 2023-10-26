@@ -16,11 +16,13 @@ const techs: string[] = [
 function Me() {
   return (
     <div className="flex flex-col items-center justify-between py-10">
-      <div className="flex flex-col items-center gap-4">
-        <div className="text-center">
-          <p className="text-base text-secondary">I'm</p>
-          <h2 className="text-3xl text-primary">Bon Tertius T.</h2>
-          <p className="text-base text-secondary">
+      <div className="mb-8 flex flex-col items-center gap-12">
+        <div className="max-w-xl text-center">
+          <p className="text-lg font-medium text-secondary">I'm</p>
+          <h2 className="mb-4 text-3xl font-semibold text-primary">
+            Bon Tertius T.
+          </h2>
+          <p className="text-lg font-medium text-secondary">
             A young and dynamic Burundian specialized in Frontend web
             development and UI Designing . Currently pursuing Bachelor degree in
             Science and Technologie with a focus on Software Engineering. With a
@@ -31,9 +33,15 @@ function Me() {
             Let’s work together to create impactful digital solutions.
           </p>
         </div>
-        <div className="max-w-lg text-center">
-          <h3>Techs and Tools I use:</h3>
-          <div className="flex flex-wrap justify-between">{}</div>
+        <div className="max-w-xl text-center text-lg font-semibold">
+          <h3 className="text-primary">Techs and Tools I use:</h3>
+          <div className="flex flex-wrap justify-center gap-3 p-3">
+            {techs.map((tech) => (
+              <span className="rounded-full bg-secondaryBg p-2 text-primary">
+                #{tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
       <LinkToBtn to="/about/contact" type="secondary">

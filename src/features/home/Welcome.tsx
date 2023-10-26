@@ -29,7 +29,7 @@ function Welcome() {
             FRONTEND DEVELOPMENT AND UI DESIGNING
           </h1>
         </div>
-        <p className="max-w-lg translate-y-1 self-center text-base font-medium text-secondary">
+        <p className="max-w-lg translate-y-1 self-center text-lg font-medium text-secondary">
           Crafting visually stunning and user-friendly digital experiences.
           Explore my work and discover how I bring creativity and functionality
           together to create impactful websites and interfaces.

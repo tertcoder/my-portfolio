@@ -12,7 +12,7 @@ function IndicationNav() {
   }, [location]);
   return (
     <div className="my-4 flex h-8 w-full items-center justify-between px-6  sm:px-12 md:px-24">
-      <span className="text-xs font-semibold text-secondary">
+      <span className="text-sm font-semibold text-secondary">
         ~{currentPage}
       </span>
       <div className="flex space-x-1 divide-x divide-primaryBg  rounded-full bg-secondaryBg">
@@ -20,13 +20,13 @@ function IndicationNav() {
           <>
             <NavLink
               to="/works/projects"
-              className="px-2 py-1 text-xs font-semibold text-secondary"
+              className="px-2 py-1 text-sm font-semibold text-secondary"
             >
               Projects
             </NavLink>
             <NavLink
               to="/works/experiences"
-              className="px-2 py-1 text-xs font-semibold text-secondary"
+              className="px-2 py-1 text-sm font-semibold text-secondary"
             >
               Experiences
             </NavLink>
@@ -36,13 +36,13 @@ function IndicationNav() {
           <>
             <NavLink
               to="/about/me"
-              className="px-2 py-1 text-xs font-semibold text-secondary"
+              className="px-2 py-1 text-sm font-semibold text-secondary"
             >
               Me
             </NavLink>
             <NavLink
               to="/about/contact"
-              className="px-2 py-1 text-xs font-semibold text-secondary"
+              className="px-2 py-1 text-sm font-semibold text-secondary"
             >
               Contact
             </NavLink>

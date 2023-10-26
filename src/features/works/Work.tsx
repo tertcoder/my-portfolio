@@ -39,7 +39,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
             </AnimatePresence>
           </motion.a>
         )}
-        <h2 className="text-base font-semibold text-primary">{title}</h2>
+        <h2 className="text-lg font-semibold text-primary">{title}</h2>
         <div className="flex flex-wrap gap-1">
           {techs.map((tech) => (
             <span key={tech} className="text-sm font-medium text-secondary">
@@ -53,7 +53,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
               <a
                 href={code}
                 target="_blank"
-                className="flex items-center gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-base font-semibold text-primary"
+                className="flex items-center gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary"
               >
                 <Github />
                 <span> GitHub</span>
@@ -61,7 +61,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
               <a
                 href={live}
                 target="_blank"
-                className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-base font-semibold text-primary"
+                className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary"
               >
                 <GoLive />
                 <span> Live</span>
