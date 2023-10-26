@@ -9,7 +9,7 @@ function Navigation() {
     setMenuOpen((o) => !o);
   }
   return (
-    <header className="flex items-center border-b border-secondaryBg">
+    <header className="flex items-center border-b border-secondaryBg px-6 sm:px-20  md:px-28 lg:px-32">
       <nav className="mx-6 flex w-full items-stretch justify-between sm:mx-12 md:mx-24 ">
         <Profile name="Bon" />
         <div className=" hidden divide-x divide-primaryBg  rounded-full bg-secondaryBg md:flex">

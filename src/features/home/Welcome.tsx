@@ -22,14 +22,14 @@ const techs: string[][] = [
 function Welcome() {
   return (
     <div className="flex flex-col items-center gap-14  pt-10 md:pt-24">
-      <div className="grid w-full place-content-center gap-4 text-center md:grid-cols-2 md:text-start">
+      <div className="grid w-full place-content-center gap-4 px-2 text-center md:grid-cols-2 md:text-start">
         <div className="w-full">
           <p className="text-sm font-medium text-secondary">Hello, I do</p>
-          <h1 className="max-w-lg  text-4xl font-bold uppercase text-primary ">
-            FRONTEND DEVELOPMENT AND UI DESIGNING
+          <h1 className="  text-4xl font-bold uppercase text-primary ">
+            FRONTEND DEVELOPMENT <br /> AND UI DESIGNING
           </h1>
         </div>
-        <p className="max-w-lg translate-y-1 self-center text-lg font-medium text-secondary">
+        <p className=" translate-y-1 self-center text-lg font-medium text-secondary">
           Crafting visually stunning and user-friendly digital experiences.
           Explore my work and discover how I bring creativity and functionality
           together to create impactful websites and interfaces.

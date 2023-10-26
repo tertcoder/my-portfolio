@@ -1,8 +1,8 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function About() {
   return (
-    <div className="h-full">
+    <div className="h-full border-x border-x-secondaryBg">
       <Outlet />
     </div>
   );

@@ -11,7 +11,7 @@ function IndicationNav() {
     setCurrentPage(activeLink);
   }, [location]);
   return (
-    <div className="my-4 flex h-8 w-full items-center justify-between px-6  sm:px-12 md:px-24">
+    <div className="my-4 flex h-8 w-full items-center justify-between px-6 sm:px-20  md:px-28 lg:px-32">
       <span className="text-sm font-semibold text-secondary">
         ~{currentPage}
       </span>
