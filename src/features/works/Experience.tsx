@@ -1,7 +1,7 @@
 import { HiArrowRight } from "react-icons/hi2";
 
-// const
-function Experience({ title, description }) {
+type PropType = { title: string; description: string };
+function Experience({ title, description }: PropType) {
   return (
     <div className="grid grid-cols-[32px_1fr]">
       <div className="text-highlight">
