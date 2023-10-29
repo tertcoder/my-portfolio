@@ -1,5 +1,4 @@
 import Welcome from "../features/home/Welcome";
-import profile from "../assets/me.jpg";
 
 function Home() {
   return (
