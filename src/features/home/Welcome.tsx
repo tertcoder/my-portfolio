@@ -6,7 +6,7 @@ import js from "../../assets/images/js.png";
 import ts from "../../assets/images/ts.png";
 import css from "../../assets/images/css.png";
 import html from "../../assets/images/html.png";
-import github from "../../assets/images/react.png";
+import github from "../../assets/images/github.png";
 import git from "../../assets/images/git.png";
 import figma from "../../assets/images/figma.png";
 import vscode from "../../assets/images/vscode.png";
