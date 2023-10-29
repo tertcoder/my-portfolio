@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import profile from "../assets/images/profile.png";
 
 type PropsType = { name: string };
-const profile: string = "../src/assets/images/profile.png";
+
 function Profile({ name }: PropsType) {
   return (
     <Link

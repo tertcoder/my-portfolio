@@ -2,6 +2,10 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import LinkToBtn from "../../ui/LinkToBtn";
 import Work from "./Work";
 import { motion } from "framer-motion";
+import tbr from "../../assets/images/tbr.png";
+import track from "../../assets/images/trackL.png";
+import wear from "../../assets/images/wear.png";
+import portfolio from "../../assets/images/portfolio.png";
 
 const showComponent = {
   initial: {
@@ -40,20 +44,20 @@ const works: WorkType[] = [
     techs: ["react", "css"],
     code: "https://github.com/tertcoder/tbrProject",
     // live: "https://google.com/",
-    image: "../src/assets/images/tbr.png",
+    image: tbr,
   },
   {
     title: "Tracking Location",
     techs: ["react", "css", "firebase"],
     code: "https://github.com/tertcoder/tracking-location",
     // live: "https://google.com/",
-    image: "../src/assets/images/trackL.png",
+    image: track,
   },
   {
     title: "WearShoes",
     techs: ["uidesign", "figma"],
     design: "https://figma.com/",
-    image: "../src/assets/images/wear.png",
+    image: wear,
   },
   {
     title: "My portfolio",
@@ -61,7 +65,7 @@ const works: WorkType[] = [
     code: "https://github.com/tertcoder/my-portfolio",
     // live: "https://google.com/",
     design: "https://figma.com",
-    image: "../src/assets/images/portfolio.png",
+    image: portfolio,
   },
 ];
 

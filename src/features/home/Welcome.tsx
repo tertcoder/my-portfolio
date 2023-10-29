@@ -1,23 +1,38 @@
 import LinkToBtn from "../../ui/LinkToBtn";
 import { motion } from "framer-motion";
 import { HiArrowSmallRight } from "react-icons/hi2";
+import react from "../../assets/images/react.png";
+import js from "../../assets/images/js.png";
+import ts from "../../assets/images/ts.png";
+import css from "../../assets/images/css.png";
+import html from "../../assets/images/html.png";
+import github from "../../assets/images/react.png";
+import git from "../../assets/images/git.png";
+import figma from "../../assets/images/figma.png";
+import vscode from "../../assets/images/vscode.png";
+import supabase from "../../assets/images/supabase.png";
+import vite from "../../assets/images/vite.png";
+import redux from "../../assets/images/redux.png";
+import reactQuery from "../../assets/images/reactQuery.png";
+import reactRouter from "../../assets/images/reactRouter.png";
+import ubuntu from "../../assets/images/ubuntu.png";
 
 const techs: string[][] = [
-  ["ReactJS", "../src/assets/images/react.png"],
-  ["JavaScript", "../src/assets/images/js.png"],
-  ["Typescript", "../src/assets/images/ts.png"],
-  ["CSS", "../src/assets/images/css.png"],
-  ["HTML", "../src/assets/images/html.png"],
-  ["GitHub", "../src/assets/images/github.png"],
-  ["GIT", "../src/assets/images/git.png"],
-  ["Figma", "../src/assets/images/figma.png"],
-  ["VSCode", "../src/assets/images/vscode.png"],
-  ["Supabase", "../src/assets/images/supabase.png"],
-  ["ViteJS", "../src/assets/images/vite.png"],
-  ["Redux", "../src/assets/images/redux.png"],
-  ["ReactQuery", "../src/assets/images/reactQuery.png"],
-  ["ReactRouter", "../src/assets/images/reactRouter.png"],
-  ["Ubuntu", "../src/assets/images/ubuntu.png"],
+  ["ReactJS", react],
+  ["JavaScript", js],
+  ["Typescript", ts],
+  ["CSS", css],
+  ["HTML", html],
+  ["GitHub", github],
+  ["GIT", git],
+  ["Figma", figma],
+  ["VSCode", vscode],
+  ["Supabase", supabase],
+  ["ViteJS", vite],
+  ["Redux", redux],
+  ["ReactQuery", reactQuery],
+  ["ReactRouter", reactRouter],
+  ["Ubuntu", ubuntu],
 ];
 
 const showComponent = {
