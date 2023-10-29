@@ -34,7 +34,7 @@ export const showComponentLink = {
 
 function Contact() {
   return (
-    <div className="flex h-full flex-col items-center justify-between py-10">
+    <div className="flex h-[calc(100vh-250px)] flex-col items-center justify-between py-10">
       <motion.div
         variants={showComponent}
         initial="initial"

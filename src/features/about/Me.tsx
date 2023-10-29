@@ -88,7 +88,7 @@ function Me() {
           <motion.h3 variants={showComponentItem} className="text-primary">
             Techs and Tools I use:
           </motion.h3>
-          <div className="flex flex-wrap justify-center gap-3 p-3">
+          <div className="flex flex-wrap justify-center gap-3 py-3">
             {techs.map((tech) => (
               <motion.span
                 variants={showComponentTag}
