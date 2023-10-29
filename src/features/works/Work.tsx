@@ -79,14 +79,14 @@ function Work({
                 <Github />
                 <span> GitHub</span>
               </a>
-              <a
+              {/* <a
                 href={live}
                 target="_blank"
                 className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary  duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
               >
                 <GoLive />
                 <span> Live</span>
-              </a>
+              </a> */}
             </>
           )}
         </div>

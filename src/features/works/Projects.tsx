@@ -30,7 +30,7 @@ export type WorkType = {
   title: string;
   techs: string[];
   code?: string;
-  live?: string;
+  // live?: string;
   design?: string;
   image: string;
 };
@@ -38,15 +38,15 @@ const works: WorkType[] = [
   {
     title: "TBR Agency",
     techs: ["react", "css"],
-    code: "https://github.com/",
-    live: "https://google.com/",
+    code: "https://github.com/tertcoder/tbrProject",
+    // live: "https://google.com/",
     image: "../src/assets/images/tbr.png",
   },
   {
     title: "Tracking Location",
     techs: ["react", "css", "firebase"],
-    code: "https://github.com/",
-    live: "https://google.com/",
+    code: "https://github.com/tertcoder/tracking-location",
+    // live: "https://google.com/",
     image: "../src/assets/images/trackL.png",
   },
   {
@@ -58,8 +58,8 @@ const works: WorkType[] = [
   {
     title: "My portfolio",
     techs: ["react", "tailwindcss", "figma", "uidesign"],
-    code: "https://github.com/",
-    live: "https://google.com/",
+    code: "https://github.com/tertcoder/my-portfolio",
+    // live: "https://google.com/",
     design: "https://figma.com",
     image: "../src/assets/images/portfolio.png",
   },
@@ -80,7 +80,7 @@ function Projects() {
             title={work.title}
             techs={work.techs}
             code={work.code}
-            live={work.live}
+            // live={work.live}
             design={work.design}
             image={work.image}
             variants={showComponentItem}
