@@ -1,6 +1,6 @@
 import { HiMiniPencil } from "react-icons/hi2";
 import Github from "../../assets/Github";
-import GoLive from "../../assets/GoLive";
+// import GoLive from "../../assets/GoLive";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { showComponentItem } from "./Projects";
@@ -18,7 +18,7 @@ function Work({
   title,
   techs,
   code,
-  live,
+  // live,
   design,
   image,
   variants,
