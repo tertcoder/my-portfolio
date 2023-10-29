@@ -7,7 +7,7 @@ function AppLayout() {
     <div className="grid h-screen grid-rows-[120px_auto_1fr] overflow-hidden bg-primaryBg  font-fredoka  ">
       <Navigation />
       <IndicationNav />
-      <main className="x overflow-y-scroll  px-6  pb-12 sm:px-20 md:px-28 lg:px-32">
+      <main className="x overflow-y-scroll  px-6  pb-12  md:px-16 lg:px-32">
         <Outlet />
       </main>
     </div>

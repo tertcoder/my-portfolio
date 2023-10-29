@@ -1,11 +1,37 @@
 import { HiArrowSmallLeft } from "react-icons/hi2";
 import LinkToBtn from "../../ui/LinkToBtn";
 import Experience from "./Experience";
+import { motion } from "framer-motion";
 
 export type ExperienceType = {
   title: string;
   description: string;
 };
+
+const showComponent = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: { duration: 0.3, delayChildren: 0.3, staggerChildren: 0.2 },
+  },
+};
+
+export const showComponentItem = {
+  initial: {
+    x: -5,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const experiences: ExperienceType[] = [
   {
     title: "Self-Taught Learning",
@@ -30,10 +56,16 @@ const experiences: ExperienceType[] = [
 ];
 function Experiences() {
   return (
-    <div className="flex flex-col items-center justify-between py-10">
+    <motion.div
+      variants={showComponent}
+      initial="initial"
+      animate="animate"
+      className="flex flex-col items-center justify-between px-4 py-10"
+    >
       <div className="flex w-full flex-1 flex-col gap-5 pb-8">
         {experiences.map((experience) => (
           <Experience
+            variants={showComponentItem}
             key={experience.title}
             title={experience.title}
             description={experience.description}
@@ -49,7 +81,7 @@ function Experiences() {
         </span>
         <span className="text-highlight">Projects</span>
       </LinkToBtn>
-    </div>
+    </motion.div>
   );
 }
 

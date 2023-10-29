@@ -1,9 +1,15 @@
 import { HiArrowRight } from "react-icons/hi2";
+import { showComponentItem } from "./Experiences";
+import { motion } from "framer-motion";
 
-type PropType = { title: string; description: string };
-function Experience({ title, description }: PropType) {
+type PropType = {
+  title: string;
+  description: string;
+  variants: typeof showComponentItem;
+};
+function Experience({ title, description, variants }: PropType) {
   return (
-    <div className="grid grid-cols-[32px_1fr]">
+    <motion.div variants={variants} className="grid grid-cols-[32px_1fr]">
       <div className="text-highlight">
         <HiArrowRight />
       </div>
@@ -11,7 +17,7 @@ function Experience({ title, description }: PropType) {
         <h2 className="mb-2 font-bold leading-none">{title}</h2>
         <p className="max-w-4xl font-medium text-secondary">{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

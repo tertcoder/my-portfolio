@@ -1,5 +1,6 @@
 import { HiArrowSmallRight } from "react-icons/hi2";
 import LinkToBtn from "../../ui/LinkToBtn";
+import { motion } from "framer-motion";
 const techs: string[] = [
   "html",
   "css",
@@ -13,11 +14,61 @@ const techs: string[] = [
   "figma",
   "supabase",
 ];
+
+const showComponent = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delayChildren: 0.2,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const showComponentItem = {
+  initial: {
+    y: 5,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+export const showComponentTag = {
+  initial: {
+    x: -5,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 function Me() {
   return (
-    <div className="flex flex-col items-center justify-between py-10">
+    <motion.div
+      variants={showComponent}
+      initial="initial"
+      animate="animate"
+      className="flex flex-col items-center justify-between py-10"
+    >
       <div className="mb-8 flex flex-col items-center gap-12">
-        <div className="max-w-xl text-center">
+        <motion.div
+          variants={showComponentItem}
+          className="max-w-xl text-center"
+        >
           <p className="text-lg font-medium text-secondary">I'm</p>
           <h2 className="mb-4 text-3xl font-semibold text-primary">
             Bon Tertius T.
@@ -32,17 +83,20 @@ function Me() {
             industry trends and technologies to deliver exceptional results.
             Let’s work together to create impactful digital solutions.
           </p>
-        </div>
+        </motion.div>
         <div className="max-w-xl text-center text-lg font-semibold">
-          <h3 className="text-primary">Techs and Tools I use:</h3>
+          <motion.h3 variants={showComponentItem} className="text-primary">
+            Techs and Tools I use:
+          </motion.h3>
           <div className="flex flex-wrap justify-center gap-3 p-3">
             {techs.map((tech) => (
-              <span
+              <motion.span
+                variants={showComponentTag}
                 key={tech}
                 className="cursor-pointer rounded-full bg-secondaryBg p-2 text-primary"
               >
                 #{tech}
-              </span>
+              </motion.span>
             ))}
           </div>
         </div>
@@ -53,7 +107,7 @@ function Me() {
           Get In Touch <HiArrowSmallRight />
         </span>
       </LinkToBtn>
-    </div>
+    </motion.div>
   );
 }
 

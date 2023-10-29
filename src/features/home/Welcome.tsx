@@ -1,4 +1,5 @@
 import LinkToBtn from "../../ui/LinkToBtn";
+import { motion } from "framer-motion";
 import { HiArrowSmallRight } from "react-icons/hi2";
 
 const techs: string[][] = [
@@ -19,34 +20,74 @@ const techs: string[][] = [
   ["Ubuntu", "../src/assets/images/ubuntu.png"],
 ];
 
+const showComponent = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const showComponentItem = {
+  initial: {
+    y: 5,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 function Welcome() {
   return (
-    <div className="flex flex-col items-center gap-14  pt-10 md:pt-24">
-      <div className="grid w-full place-content-center gap-4 px-2 text-center md:grid-cols-2 md:text-start">
-        <div className="w-full">
+    <motion.div
+      variants={showComponent}
+      initial="initial"
+      animate="animate"
+      className="flex flex-col items-center gap-14  pt-10 md:pt-24"
+    >
+      <div className=" grid w-full place-content-center gap-4 px-2 text-center md:grid-cols-2 md:text-start">
+        <motion.div variants={showComponentItem} className="w-full">
           <p className="text-sm font-medium text-secondary">Hello, I do</p>
           <h1 className="  text-4xl font-bold uppercase text-primary ">
             FRONTEND DEVELOPMENT <br /> AND UI DESIGNING
           </h1>
-        </div>
-        <p className=" translate-y-1 self-center text-lg font-medium text-secondary">
+        </motion.div>
+        <motion.p
+          variants={showComponentItem}
+          className=" translate-y-1 self-center text-lg font-medium text-secondary"
+        >
           Crafting visually stunning and user-friendly digital experiences.
           Explore my work and discover how I bring creativity and functionality
           together to create impactful websites and interfaces.
-        </p>
+        </motion.p>
       </div>
+
       <LinkToBtn to="/about" type="secondary">
         <span className="font-medium">Learn More </span>
         <span className="flex items-center text-highlight">
           About me <HiArrowSmallRight />
         </span>
       </LinkToBtn>
-      <div className="flex max-w-2xl flex-wrap justify-center gap-4 px-1 py-4">
+
+      <motion.div
+        variants={showComponentItem}
+        className="flex max-w-2xl flex-wrap justify-center gap-4 px-1 py-4"
+      >
         {techs.map((tech) => (
           <img key={tech[0]} src={tech[1]} alt={tech[0]} />
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

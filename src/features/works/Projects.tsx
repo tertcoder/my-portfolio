@@ -1,6 +1,31 @@
 import { HiArrowSmallRight } from "react-icons/hi2";
 import LinkToBtn from "../../ui/LinkToBtn";
 import Work from "./Work";
+import { motion } from "framer-motion";
+
+const showComponent = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: { duration: 0.3, delayChildren: 0.3, staggerChildren: 0.2 },
+  },
+};
+
+export const showComponentItem = {
+  initial: {
+    x: -5,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 export type WorkType = {
   title: string;
   techs: string[];
@@ -42,7 +67,12 @@ const works: WorkType[] = [
 
 function Projects() {
   return (
-    <div className="flex flex-col items-center justify-between py-10">
+    <motion.div
+      variants={showComponent}
+      initial="initial"
+      animate="animate"
+      className="flex flex-col items-center justify-between py-10"
+    >
       <div className="flex w-full flex-1 flex-wrap justify-center gap-7 pb-8">
         {works.map((work) => (
           <Work
@@ -53,16 +83,18 @@ function Projects() {
             live={work.live}
             design={work.design}
             image={work.image}
+            variants={showComponentItem}
           />
         ))}
       </div>
+
       <LinkToBtn to="/works/experiences" type="secondary">
         <span>See my </span>
         <span className="flex items-center gap-0.5 text-highlight">
           Experience <HiArrowSmallRight />
         </span>
       </LinkToBtn>
-    </div>
+    </motion.div>
   );
 }
 

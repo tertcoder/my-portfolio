@@ -6,14 +6,14 @@ type PropType = {
 function LinkTo({ children, to, alt }: PropType) {
   return (
     <a
-      className="text-lg font-semibold text-primary underline duration-300 hover:text-highlight "
+      className="group text-lg font-semibold text-primary underline duration-300 hover:text-highlight "
       href={to}
       target="_blank"
       rel="noopener noreferrer"
     >
       {children}
       {alt && (
-        <span className="text-xs font-medium text-secondary duration-300 hover:text-highlight">
+        <span className="text-xs font-medium text-secondary duration-300 group-hover:text-highlight">
           twitter
         </span>
       )}

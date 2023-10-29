@@ -1,15 +1,34 @@
 import { HiMiniPencil } from "react-icons/hi2";
 import Github from "../../assets/Github";
 import GoLive from "../../assets/GoLive";
-import { WorkType } from "./Projects";
-import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { showComponentItem } from "./Projects";
 
-type PropsType = WorkType;
-function Work({ title, techs, code, live, design, image }: PropsType) {
+type PropsType = {
+  title: string;
+  techs: string[];
+  code?: string | undefined;
+  live?: string | undefined;
+  design?: string | undefined;
+  image: string;
+  variants: typeof showComponentItem;
+};
+function Work({
+  title,
+  techs,
+  code,
+  live,
+  design,
+  image,
+  variants,
+}: PropsType) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   return (
-    <div className="grid w-80 grid-rows-[256px_1fr] rounded-2xl bg-secondaryBg p-3 shadow-lg">
+    <motion.div
+      variants={variants}
+      className="grid w-80 grid-rows-[256px_1fr] rounded-2xl bg-secondaryBg p-3 shadow-lg"
+    >
       <div className="overflow-hidden rounded-xl">
         <img src={`${image}`} alt={title} className="h-64 object-cover" />
       </div>
@@ -72,7 +91,7 @@ function Work({ title, techs, code, live, design, image }: PropsType) {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
