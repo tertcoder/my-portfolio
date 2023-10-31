@@ -56,7 +56,8 @@ const works: WorkType[] = [
   {
     title: "WearShoes",
     techs: ["uidesign", "figma"],
-    design: "https://figma.com/",
+    design:
+      "https://www.figma.com/proto/heT7dQZ3bg27PW5qg5UIe8/WearShoes?type=design&node-id=2-3&t=LQxcG1IrlM0owg9T-1&scaling=min-zoom&page-id=0%3A1&mode=design",
     image: wear,
   },
   {
@@ -64,7 +65,8 @@ const works: WorkType[] = [
     techs: ["react", "tailwindcss", "figma", "uidesign"],
     code: "https://github.com/tertcoder/my-portfolio",
     // live: "https://google.com/",
-    design: "https://figma.com",
+    design:
+      "https://www.figma.com/file/zb60xEqKidkDauu6xj7vO6/Professional-Portfolio?type=design&node-id=0%3A1&mode=design&t=30Pm80clTONhtWq0-1",
     image: portfolio,
   },
 ];
