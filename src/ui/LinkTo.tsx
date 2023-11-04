@@ -1,12 +1,22 @@
+import { twMerge } from "tailwind-merge";
+
 type PropType = {
   children: string;
   to: string;
   alt?: string;
+  className?: string;
 };
-function LinkTo({ children, to, alt }: PropType) {
+function LinkTo({ children, to, alt, className }: PropType) {
   return (
     <a
-      className="group text-lg font-semibold text-primary underline duration-300 hover:text-highlight "
+      className={
+        className
+          ? twMerge(
+              `group text-lg font-semibold text-primary underline duration-300 hover:text-highlight `,
+              `${className}`,
+            )
+          : "group text-lg font-semibold text-primary underline duration-300 hover:text-highlight"
+      }
       href={to}
       target="_blank"
       rel="noopener noreferrer"

@@ -2,7 +2,7 @@ import Welcome from "../features/home/Welcome";
 
 function Home() {
   return (
-    <div className=" relative border-x border-x-secondaryBg ">
+    <div className=" relative flex h-full items-center border-x border-x-secondaryBg ">
       <Welcome />
     </div>
   );

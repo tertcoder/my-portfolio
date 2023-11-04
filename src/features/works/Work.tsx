@@ -27,7 +27,7 @@ function Work({
   return (
     <motion.div
       variants={variants}
-      className="grid w-80 grid-rows-[256px_1fr] rounded-2xl bg-secondaryBg p-3 shadow-lg"
+      className="grid min-h-[25rem] w-80 grid-rows-[256px_1fr] rounded-2xl bg-secondaryBg p-3 shadow-lg"
     >
       <div className="overflow-hidden rounded-xl">
         <img src={`${image}`} alt={title} className="h-64 object-cover" />

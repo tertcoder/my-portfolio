@@ -70,7 +70,7 @@ function Welcome() {
       animate="animate"
       className="flex flex-col items-center gap-14  pt-10 md:pt-24"
     >
-      <div className=" grid w-full place-content-center gap-4 px-2 text-center md:grid-cols-2 md:text-start">
+      <div className=" grid w-full place-content-center gap-4 px-2 text-center md:grid-cols-2 md:text-start lg:px-8">
         <motion.div variants={showComponentItem} className="w-full">
           <p className="text-sm font-medium text-secondary">Hello, I do</p>
           <h1 className="  text-4xl font-bold uppercase text-primary ">

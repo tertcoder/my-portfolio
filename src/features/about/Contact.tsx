@@ -59,6 +59,24 @@ function Contact() {
             <LinkTo to="https://github.com/tertcoder">GitHub</LinkTo>
           </motion.div>
         </div>
+
+        <motion.div
+          variants={showComponentLink}
+          className="mt-10 text-base font-medium text-secondary"
+        >
+          Enjoy my blog post on{" "}
+          <LinkTo
+            to="https://medium.com/@tuyishimirebt12"
+            className="no-underline"
+          >
+            Medium
+          </LinkTo>{" "}
+          and{" "}
+          <LinkTo to="https://dev.to/tertcoder" className="no-underline">
+            Dev.to
+          </LinkTo>
+          !
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
