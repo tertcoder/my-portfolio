@@ -42,7 +42,7 @@ const works: WorkType[] = [
   {
     title: "TBR Agency",
     techs: ["react", "css"],
-    code: "https://github.com/tertcoder/tbrProject",
+    code: "https://github.com/tertcoder/tbr-agency-updated",
     // live: "https://google.com/",
     image: tbr,
   },
