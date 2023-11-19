@@ -34,7 +34,7 @@ export type WorkType = {
   title: string;
   techs: string[];
   code?: string;
-  // live?: string;
+  live?: string;
   design?: string;
   image: string;
 };
@@ -43,7 +43,7 @@ const works: WorkType[] = [
     title: "TBR Agency",
     techs: ["react", "css"],
     code: "https://github.com/tertcoder/tbr-agency-updated",
-    // live: "https://google.com/",
+    live: "https://tbragency.netlify.app/",
     image: tbr,
   },
   {
