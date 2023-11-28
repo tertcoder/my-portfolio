@@ -57,7 +57,7 @@ const works: WorkType[] = [
     title: "WearShoes",
     techs: ["uidesign", "figma"],
     design:
-      "https://www.figma.com/proto/heT7dQZ3bg27PW5qg5UIe8/WearShoes?type=design&node-id=2-3&t=LQxcG1IrlM0owg9T-1&scaling=min-zoom&page-id=0%3A1&mode=design",
+      "https://www.figma.com/file/heT7dQZ3bg27PW5qg5UIe8/WearShoes?type=design&node-id=0%3A1&mode=design&t=HDDibZFBpJttDmm1-1",
     image: wear,
   },
   {
