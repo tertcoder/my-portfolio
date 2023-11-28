@@ -54,7 +54,7 @@ const works: WorkType[] = [
     image: track,
   },
   {
-    title: "WearShoes",
+    title: "WearStore",
     techs: ["uidesign", "figma"],
     design:
       "https://www.figma.com/file/heT7dQZ3bg27PW5qg5UIe8/WearShoes?type=design&node-id=0%3A1&mode=design&t=HDDibZFBpJttDmm1-1",
