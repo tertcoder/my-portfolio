@@ -73,7 +73,7 @@ function Projects() {
       animate="animate"
       className="flex max-w-7xl flex-col items-center justify-between py-10"
     >
-      <div className="flex w-full flex-1 justify-center gap-7 overflow-x-auto pb-8">
+      <div className="flex w-full flex-1 gap-7 overflow-x-auto pb-8">
         {works.map((work) => (
           <Work
             key={work.title}
