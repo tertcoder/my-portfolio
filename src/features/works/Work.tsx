@@ -9,9 +9,9 @@ import GoLive from "../../assets/GoLive";
 type PropsType = {
   title: string;
   techs: string[];
-  code?: string | undefined;
-  live?: string | undefined;
-  design?: string | undefined;
+  code: string;
+  live: string;
+  design: string;
   image: string;
   variants: typeof showComponentItem;
 };
@@ -74,8 +74,8 @@ function Work({
           ))}
         </div>
         <div className="flex justify-between">
-          {code && (
-            <>
+          <>
+            {code && (
               <a
                 href={code}
                 target="_blank"
@@ -84,18 +84,18 @@ function Work({
                 <Github />
                 <span> GitHub</span>
               </a>
-              {live && (
-                <a
-                  href={live}
-                  target="_blank"
-                  className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary  duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
-                >
-                  <GoLive />
-                  <span> Live</span>
-                </a>
-              )}
-            </>
-          )}
+            )}
+            {live && (
+              <a
+                href={live}
+                target="_blank"
+                className="flex items-center  gap-2 rounded-xl  border-2 border-primaryBg px-3 py-2  text-lg font-semibold text-primary  duration-300  focus:outline-none focus:ring-1 focus:ring-highlight focus:ring-offset-2 focus:ring-offset-primaryBg"
+              >
+                <GoLive />
+                <span> Live</span>
+              </a>
+            )}
+          </>
         </div>
       </div>
     </motion.div>

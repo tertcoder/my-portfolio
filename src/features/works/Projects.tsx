@@ -3,7 +3,6 @@ import LinkToBtn from "../../ui/LinkToBtn";
 import Work from "./Work";
 import { motion } from "framer-motion";
 import tbr from "../../assets/images/tbr.png";
-import track from "../../assets/images/trackL.png";
 import wear from "../../assets/images/wear.png";
 import portfolio from "../../assets/images/portfolio.png";
 
@@ -46,16 +45,11 @@ const works: WorkType[] = [
     live: "https://tbragency.netlify.app/",
     image: tbr,
   },
-  {
-    title: "Tracking Location",
-    techs: ["react", "css", "firebase"],
-    code: "https://github.com/tertcoder/tracking-location",
-    // live: "https://google.com/",
-    image: track,
-  },
+
   {
     title: "WearStore",
     techs: ["uidesign", "figma"],
+    code: "https://github.com/tertcoder/wear-store",
     design:
       "https://www.figma.com/file/heT7dQZ3bg27PW5qg5UIe8/WearShoes?type=design&node-id=0%3A1&mode=design&t=HDDibZFBpJttDmm1-1",
     image: wear,
@@ -64,7 +58,7 @@ const works: WorkType[] = [
     title: "My portfolio",
     techs: ["react", "tailwindcss", "figma", "uidesign"],
     code: "https://github.com/tertcoder/my-portfolio",
-    // live: "https://google.com/",
+    live: "https://bontert.netlify.app/",
     design:
       "https://www.figma.com/file/zb60xEqKidkDauu6xj7vO6/Professional-Portfolio?type=design&node-id=0%3A1&mode=design&t=30Pm80clTONhtWq0-1",
     image: portfolio,
@@ -77,17 +71,17 @@ function Projects() {
       variants={showComponent}
       initial="initial"
       animate="animate"
-      className="flex flex-col items-center justify-between py-10"
+      className="flex max-w-7xl flex-col items-center justify-between py-10"
     >
-      <div className="flex w-full flex-1 flex-wrap justify-center gap-7 pb-8">
+      <div className="flex w-full flex-1 justify-center gap-7 pb-8">
         {works.map((work) => (
           <Work
             key={work.title}
             title={work.title}
             techs={work.techs}
-            code={work.code}
-            // live={work.live}
-            design={work.design}
+            code={work.code ?? ""}
+            live={work.live ?? ""}
+            design={work.design ?? ""}
             image={work.image}
             variants={showComponentItem}
           />
