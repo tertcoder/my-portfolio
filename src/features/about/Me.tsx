@@ -2,17 +2,16 @@ import { HiArrowSmallRight } from "react-icons/hi2";
 import LinkToBtn from "../../ui/LinkToBtn";
 import { motion } from "framer-motion";
 const techs: string[] = [
-  "html",
-  "css",
+  "html/css",
   "javascript",
   "reactjs",
   "typescript",
-  "git",
-  "github",
-  "vitejs",
-  "vscode",
-  "figma",
+  "dart",
+  "flutter",
+  "firebase",
   "supabase",
+  "git/github",
+  "figma",
 ];
 
 const showComponent = {

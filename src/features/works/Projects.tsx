@@ -40,7 +40,7 @@ export type WorkType = {
 const works: WorkType[] = [
   {
     title: "TBR Agency",
-    techs: ["react", "css"],
+    techs: ["reactjs", "css"],
     code: "https://github.com/tertcoder/tbr-agency-updated",
     live: "https://tbragency.netlify.app/",
     image: tbr,
@@ -48,15 +48,16 @@ const works: WorkType[] = [
 
   {
     title: "WearStore",
-    techs: ["uidesign", "figma"],
+    techs: ["reactjs", "ts", "supabase", "uidesign", "figma"],
     code: "https://github.com/tertcoder/wear-store",
+    live: "https://wearstore.netlify.app/",
     design:
       "https://www.figma.com/file/heT7dQZ3bg27PW5qg5UIe8/WearShoes?type=design&node-id=0%3A1&mode=design&t=HDDibZFBpJttDmm1-1",
     image: wear,
   },
   {
     title: "My portfolio",
-    techs: ["react", "tailwindcss", "figma", "uidesign"],
+    techs: ["reactjs", "ts", "tailwindcss", "figma", "uidesign"],
     code: "https://github.com/tertcoder/my-portfolio",
     live: "https://bontert.netlify.app/",
     design:
